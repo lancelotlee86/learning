@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Image Gallery</title>
+        <link rel='stylesheet' href='static\css\snapshots.css' type="text/css" media='screen'/>
+    </head>
+    <body>
+        <h1>Snapshots</h1>
+        <ul id="imagegallery">
+            <li>
+                <a href='static/images/python.jpg' title='python'>
+                    <img src="static/images/python.jpg" alt="Python" height=40 weigth=40 />
+                </a>
+                <!--
+                <a href='static\images\python.jpg' title='python' onclick='showPic(this); return false'> Python</a>
+                这个也可以，但是没有做到 Javascript 与 HTML 分离
+                -->
+                <!-- 添加 return false，使得 onclick 事件处理函数认为“这个链接没有被点击” -->
+            </li>
+            <li>
+                <a href='static/images/javascript.jpg' title='javascript'>
+                    <img src="static/images/javascript.jpg" alt="JavaScript" height=40 weigth=40 />
+                </a>
+            </li>
+            <li>
+                <a href='static/images/cpp.jpg' title='cpp'>
+                    <img src="static/images/cpp.jpg" alt="C++" height=40 weigth=40 />
+                </a>
+            </li>
+            <li>
+                <a href='static/images/lisp.jpg' title='lisp'>
+                    <img src="static/images/lisp.jpg" alt="Lisp" height=40 weigth=40 />
+                </a>
+            </li>
+        </ul>
+        <!-- 这部分内容在js代码中动态生成了
+            <img id='placeholder' alt='my image gallery'/>
+            <p id='description'>Choose an image.</p>
+        -->
+        <!-- 包含在 <p> 元素里的文本时另一种节点，它是 <p> 元素的第一个子节点 -->
+        <script src="static/js/snapshots.js"></script>
+        <!--<script>window.onload = countBodyChildren</script>-->
+    <body>
+</html>

@@ -1,0 +1,54 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+table {
+  margin: auto;
+  border: 1px solid #699;
+}
+
+caption {
+  margin: auto;
+  padding: .2em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+th {
+  font-weight: normal;
+  font-style: italic;
+  text-align: left;
+  border: 1px dotted #699;
+  background-color: #9cc;
+  color: #000;
+}
+
+th,td {
+  width: 10em;
+  padding: .5em;
+}
+
+.odd {
+  background-color: #ffc;
+}
+
+/*
+  使用 css伪类 hover 来实现鼠标悬停改变效果，但很多浏览器还不支持，所以可以用 javascript 实现
+  tr:hover {
+    font-weight: bold;
+  }
+*/
+
+/*
+  只在 css3 中有效，设置奇数行和偶数行的行为
+  保险的方法是用 javascript 操作 DOM 为表格中每个奇数行或偶数行设置一个 class 属性即可。
+
+  tr:nth-child(odd) {
+    background-color: #ffc;
+  }
+  tr:nth-child(even) {
+    background-color: #fff;
+  }
+*/

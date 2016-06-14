@@ -1,0 +1,9 @@
+p#example {
+  color: grey;
+  font: 12px 'Arial', sans-serif;
+}
+
+.intro {
+  font-weight: bold;
+  font-size: 1.4em;
+}

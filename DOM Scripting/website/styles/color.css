@@ -1,0 +1,84 @@
+body {
+  color: #fb5;
+  background-color: #334;
+}
+
+a:link {
+  /*未访问时的状态*/
+  color: #445;
+  background-color: #eb6;
+}
+
+a:visited {
+  /*链接访问过后的状态*/
+  color: #345;
+  background-color: #eb6;
+}
+
+a:hover {
+  /* 鼠标移动到链接上时的状态 */
+  color: #667;
+  background-color: #fb5;
+}
+
+a:active {
+  /* 鼠标按下去时的状态 */
+  color: #778;
+  background-color: #ec8;
+}
+
+header {
+  color: #ec8;
+  background-color: #334;
+  border-color: #667;
+}
+
+header nav {
+  color: #455;
+  background-color: #798;
+  border-color: #667;
+}
+
+article {
+  color: #223;
+  background-color: #edc;
+  border-color: #667;
+}
+
+header nav ul {
+  border-color: #99a;
+}
+
+header nav a:link, header nav a:visited {
+  color: #eef;
+  background-color: transparent;
+  border-color: #99a;
+}
+
+header nav a:hover {
+  color: #445;
+  background-color: #eb6;
+}
+
+header nav a:active {
+  color: #667;
+  background-color: #ec8;
+}
+
+artical img {
+  border-color: #ba9;
+  outline-color: #dcb;
+}
+
+#imagegallery a {
+  background-color: transparent;
+}
+
+/* 为当前所在页面的导航链接定义样式 */
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active {
+  color: #eef;
+  background-color: #799;
+}
