@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Just a test</title>
+    </head>
+    <body>
+        <a href='javascript:popUp("http://baidu.com");'>Baidu1</a><br>   <!-- not a good way -->
+        <a href='#' onclick='popUp("http://baidu.com"); return false;'>Baidu2</a>    <!-- not a good way -->
+        <a href='http://baidu.com' onclick='popUp("http://baidu.com"); return false;'>Baidu3</a>    <!-- a good way -->
+        <a href='http://baidu.com' onclick='popUp(this.getAttribute("href")); return false;'>Baidu4</a> <!-- a better way -->
+        <a href='http://baidu.com' onclick='popUp(this.href); return false;'>Baidu5</a> <!-- a best way -->
+        <a href='http://baidu.com' class="popup">Baidu6</a> <!-- a very best way -->
+
+        <div id="testdiv"></div>
+        <div id="testdiv2"></div>
+
+        <script>
+            document.write("<p>This is inserted by document.write.</p>");
+            // a bad way
+        </script>
+
+        <script src="static\js\example.js"></script>
+    <body>
+</html>
